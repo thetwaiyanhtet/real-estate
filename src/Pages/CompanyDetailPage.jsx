@@ -100,7 +100,6 @@ const CompanyDetailPage = () => {
       <Record />
       <CompanyProperties />
       <Footer />
-      <Footer />
     </div>
   );
 };
