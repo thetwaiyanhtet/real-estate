@@ -12,6 +12,69 @@ import area from "./Assets/maximize 1.png";
 import { AiFillHeart } from "react-icons/ai";
 import Button from "./Button";
 
+const CategoryMenu = () => {
+  const [menu, setMenu] = useState("residential");
+
+  return (
+    <>
+      <li
+        className={`cate-menu ${
+          menu === "residential" ? "text-orange-900" : ""
+        }`}
+        onClick={() => setMenu("residential")}
+      >
+        residential{" "}
+        {menu === "residential" && (
+          <hr className="mt-2 w-[80%] h-1 bg-orange-900" />
+        )}
+      </li>
+      <li
+        className={`cate-menu ${
+          menu === "commercial" ? "text-orange-900" : ""
+        }`}
+        onClick={() => setMenu("commercial")}
+      >
+        commercial{" "}
+        {menu === "commercial" && (
+          <hr className="mt-2 w-[80%] h-1 bg-orange-900" />
+        )}
+      </li>
+      <li
+        className={`cate-menu ${menu === "land" ? "text-orange-900" : ""}`}
+        onClick={() => setMenu("land")}
+      >
+        land{" "}
+        {menu === "land" && <hr className="mt-2 w-[80%] h-1 bg-orange-900" />}
+      </li>
+      <li
+        className={`cate-menu ${
+          menu === "apartments" ? "text-orange-900" : ""
+        }`}
+        onClick={() => setMenu("apartments")}
+      >
+        apartments{" "}
+        {menu === "apartments" && (
+          <hr className="mt-2 w-[80%] h-1 bg-orange-900" />
+        )}
+      </li>
+      <li
+        className={`cate-menu ${menu === "house" ? "text-orange-900" : ""}`}
+        onClick={() => setMenu("house")}
+      >
+        house{" "}
+        {menu === "house" && <hr className="mt-2 w-[80%] h-1 bg-orange-900" />}
+      </li>
+      <li
+        className={`cate-menu ${menu === "office" ? "text-orange-900" : ""}`}
+        onClick={() => setMenu("office")}
+      >
+        office{" "}
+        {menu === "office" && <hr className="mt-2 w-[80%] h-1 bg-orange-900" />}
+      </li>
+    </>
+  );
+};
+
 const SectionTwo = (props) => {
   // State to track the color of the heart icon
   const [heartColor, setHeartColor] = useState("white");
@@ -23,8 +86,6 @@ const SectionTwo = (props) => {
     setHeartColor(newColor);
   };
 
-  const [menu, setMenu] = useState("residential");
-
   return (
     <div className=" capitalize flex flex-col items-center space-y-7 my-3">
       <div className=" flex items-center">
@@ -33,66 +94,9 @@ const SectionTwo = (props) => {
           <ion-icon name="chevron-down-outline"></ion-icon>
         </span>
       </div>
-      <ul className="flex space-x-10 text-xl">
-        <li
-          className={`cate-menu ${
-            menu === "residential" ? "text-orange-900" : ""
-          }`}
-          onClick={() => setMenu("residential")}
-        >
-          residential{" "}
-          {menu === "residential" && (
-            <hr className="mt-2 w-[80%] h-1 bg-orange-900" />
-          )}
-        </li>
-        <li
-          className={`cate-menu ${
-            menu === "commercial" ? "text-orange-900" : ""
-          }`}
-          onClick={() => setMenu("commercial")}
-        >
-          commercial{" "}
-          {menu === "commercial" && (
-            <hr className="mt-2 w-[80%] h-1 bg-orange-900" />
-          )}
-        </li>
-        <li
-          className={`cate-menu ${menu === "land" ? "text-orange-900" : ""}`}
-          onClick={() => setMenu("land")}
-        >
-          land{" "}
-          {menu === "land" && <hr className="mt-2 w-[80%] h-1 bg-orange-900" />}
-        </li>
-        <li
-          className={`cate-menu ${
-            menu === "apartments" ? "text-orange-900" : ""
-          }`}
-          onClick={() => setMenu("apartments")}
-        >
-          apartments{" "}
-          {menu === "apartments" && (
-            <hr className="mt-2 w-[80%] h-1 bg-orange-900" />
-          )}
-        </li>
-        <li
-          className={`cate-menu ${menu === "house" ? "text-orange-900" : ""}`}
-          onClick={() => setMenu("house")}
-        >
-          house{" "}
-          {menu === "house" && (
-            <hr className="mt-2 w-[80%] h-1 bg-orange-900" />
-          )}
-        </li>
-        <li
-          className={`cate-menu ${menu === "office" ? "text-orange-900" : ""}`}
-          onClick={() => setMenu("office")}
-        >
-          office{" "}
-          {menu === "office" && (
-            <hr className="mt-2 w-[80%] h-1 bg-orange-900" />
-          )}
-        </li>
-      </ul>
+      <div className="flex flex-wrap justify-center items-center space-x-5 space-y-0 md:space-x-10 md:text-xl text-base gap-5">
+        <CategoryMenu />
+      </div>
       <div>
         <div className="flex flex-wrap p-8 gap-12 gap-y-16 items-center justify-center">
           {apartments.map((apartment, index) => (
@@ -113,17 +117,17 @@ const SectionTwo = (props) => {
               <div className=" font-bold text-orange-900 text-2xl">
                 {apartment.price}
               </div>
-              <div className=" flex space-x-4">
+              <div className=" flex space-x-4 text-xs md:text-base">
                 <div className=" spec">
-                  <img src={bed} alt="..." width={30} />
+                  <img src={bed} alt="..." className=" md:w-7 w-5" />
                   <div>Bedrooms: {apartment.bedrooms}</div>
                 </div>
                 <div className=" spec">
-                  <img src={bathTub} alt="..." width={30} />
+                  <img src={bathTub} alt="..." className=" md:w-7 w-5" />
                   <div>Bathrooms: {apartment.bathrooms}</div>
                 </div>
                 <div className=" spec">
-                  <img src={area} alt="..." width={30} />
+                  <img src={area} alt="..." className=" md:w-7 w-5" />
                   <div>Area: {apartment.area}</div>
                 </div>
               </div>

@@ -3,17 +3,17 @@ import heroBackground from "./Assets/hero-background.png";
 
 const HeroSection = () => {
   return (
-    <div className="relative w-full h-[600px] text-white">
+    <div className="relative w-full h-[1200px] md:h-[600px] text-white">
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{ backgroundImage: `url(${heroBackground})` }}
       >
         <div className=" flex flex-col justify-center items-center">
-          <h1 className="capitalize mt-20 text-5xl">
+          <h1 className="capitalize mt-20 text-5xl text-center">
             search today, move tomorrow
           </h1>
           <div className=" backdrop-blur-md rounded-md p-10 space-y-7 mt-10">
-            <div className=" flex space-x-7">
+            <div className=" flex md:space-x-7 space-y-0 flex-wrap gap-4 ">
               <div>
                 <p className="">Location (State)</p>
                 <select name="state" id="state" className=" search-box">
@@ -51,7 +51,7 @@ const HeroSection = () => {
                 </select>
               </div>
             </div>
-            <div className=" flex space-x-7">
+            <div className=" flex md:space-x-7 space-y-0 flex-wrap gap-4">
               <div>
                 <p className="">Bedrooms</p>
                 <select name="state" id="state" className=" search-box ">
@@ -90,7 +90,7 @@ const HeroSection = () => {
               </div>
             </div>
           </div>
-          <div className=" capitalize flex justify-between w-[1200px] mt-10">
+          <div className=" capitalize flex justify-between w-[400px] md:w-[1200px] mt-10">
             <p className="search">search by typing</p>
             <p className="search">advanced search</p>
             <p className="search">map search</p>
