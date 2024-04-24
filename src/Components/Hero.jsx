@@ -9,7 +9,7 @@ const HeroSection = () => {
         style={{ backgroundImage: `url(${heroBackground})` }}
       >
         <div className=" flex flex-col justify-center items-center">
-          <h1 className="capitalize mt-20 text-5xl text-center">
+          <h1 className="capitalize mt-20 md:text-5xl text-center">
             search today, move tomorrow
           </h1>
           <div className=" backdrop-blur-md rounded-md p-10 space-y-7 mt-10">
@@ -90,7 +90,7 @@ const HeroSection = () => {
               </div>
             </div>
           </div>
-          <div className=" capitalize flex justify-between w-[400px] md:w-[1200px] mt-10">
+          <div className=" capitalize flex justify-between space-x-3 text-center w-[300px] md:w-[1200px] mt-10">
             <p className="search">search by typing</p>
             <p className="search">advanced search</p>
             <p className="search">map search</p>

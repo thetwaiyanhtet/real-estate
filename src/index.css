@@ -38,7 +38,7 @@ code {
   @apply flex items-center md:space-x-3 space-x-1;
 }
 .property-card {
-  @apply flex flex-col items-center justify-center space-y-3 ring-2 ring-white w-52 py-4 hover:scale-105;
+  @apply flex flex-col items-center justify-center space-y-3 ring-2 ring-white md:w-52 w-32 py-4 hover:scale-105;
 }
 .partner-card {
   @apply flex flex-col items-center space-y-3 hover:scale-110;
@@ -50,13 +50,13 @@ code {
   @apply font-semibold mb-5 text-base;
 }
 .footer-nav-menu {
-  @apply space-y-2 text-sm;
+  @apply space-y-2 md:text-sm text-xs;
 }
 .link {
   @apply text-orange-900 underline;
 }
 .partner-container {
-  @apply flex space-x-20;
+  @apply flex space-x-20 md:w-auto w-[180px] px-10 md:overflow-auto overflow-x-scroll overflow-y-hidden p-3;
 }
 .proprerty-menu {
   @apply text-orange-900 bg-gray-100 border;

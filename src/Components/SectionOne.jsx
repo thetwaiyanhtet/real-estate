@@ -11,7 +11,7 @@ const SectionOne = () => {
   return (
     <div className=" text-sm md:text-base capitalize flex flex-col items-center justify-center my-10 space-y-14">
       <div className=" bg-orange-900 w-20 h-2"></div>
-      <h1>explore property tools & info</h1>
+      <h1 className=" text-xl md:text-3xl font-semibold">explore property tools & info</h1>
       <div>
         <div className=" md:flex gap-5 md:space-y-0 space-y-5">
           <div className=" flex  md:flex-col md:space-y-5 space-y-0 space-x-5 md:space-x-0 flex-warp">

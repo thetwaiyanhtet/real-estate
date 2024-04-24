@@ -6,7 +6,7 @@ import { ImLinkedin } from "react-icons/im";
 const Footer = () => {
   return (
     <div>
-      <p className=" w-[88%] mx-auto my-20 tracking-wider leading-6">
+      <p className=" md:text-base text-sm w-[88%] mx-auto my-20 tracking-wider leading-6">
         <a href="#" className="link">
           RentAll.com
         </a>{" "}
@@ -42,7 +42,7 @@ const Footer = () => {
         . Read more
       </p>
       <div className=" capitalize flex flex-col mt-10 py-7 bg-gray-200">
-        <div className=" flex justify-around ">
+        <div className=" flex justify-around flex-wrap gap-4">
           <ul className=" footer-nav-menu">
             <li className="menu-header">RentAll Group</li>
             <li>About Us</li>
@@ -95,7 +95,7 @@ const Footer = () => {
           </ul>
         </div>
       </div>
-      <p className=" bg-gray-800 text-white text-center p-4 text-sm">
+      <p className=" bg-gray-800 text-white text-center p-4 text-xs md:text-sm">
         All right are reserved. Business registration number #1234
       </p>
     </div>

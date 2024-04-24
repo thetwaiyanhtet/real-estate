@@ -89,7 +89,7 @@ const SectionTwo = (props) => {
   return (
     <div className=" capitalize flex flex-col items-center space-y-7 my-3">
       <div className=" flex items-center">
-        <h1>listing of over 5,024 properties ( for rent ) </h1>
+        <h1 className=" text-xl md:text-4xl font-semibold">listing of over 5,024 properties ( for rent ) </h1>
         <span className=" text-2xl mt-3">
           <ion-icon name="chevron-down-outline"></ion-icon>
         </span>

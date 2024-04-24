@@ -19,9 +19,9 @@ const SectionFour = () => {
   return (
     <div className=" capitalize flex flex-col items-center justify-center my-10 space-y-20">
       <div className=" bg-orange-900 w-20 h-2"></div>
-      <h1>our brand partners</h1>
+      <h1 className=" text-2xl font-semibold md:text-3xl">our brand partners</h1>
       <div className=" flex items-center space-x-10">
-        <IoIosArrowBack className=" size-16 hover:scale-150" />
+        <IoIosArrowBack className=" size-9 md:size-16 hover:scale-150" />
         <div className="partner-container">
           {partners.map((partner, index) => (
             <div key={index} className="partner-card">
@@ -33,7 +33,7 @@ const SectionFour = () => {
             </div>
           ))}
         </div>
-        <IoIosArrowForward className=" size-16 hover:scale-150" />
+        <IoIosArrowForward className=" size-9 md:size-16 hover:scale-150" />
       </div>
       <Button b_name="More Property" />
       <div className=" bg-orange-900 w-20 h-2"></div>

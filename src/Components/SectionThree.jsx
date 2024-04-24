@@ -16,16 +16,16 @@ const SectionThree = () => {
     <div className=" capitalize flex flex-col items-center relative w-full h-[600px] my-10 text-white">
       {/* <div style={{ backgroundImage: `url(${cityViewBg})` }}></div> */}
       <img src={cityViewBg} alt="..." className=" absolute w-full h-full" />
-      <div className=" z-50 flex flex-col items-center space-y-24">
-        <h1 className=" mt-20">find property nearby</h1>
-        <div className=" flex gap-12">
+      <div className=" z-50 flex flex-col items-center space-y-10 md:space-y-24">
+        <h1 className=" mt-20 text-2xl md:text-3xl">find property nearby</h1>
+        <div className=" flex flex-wrap gap-8 md:gap-12 justify-center">
           {propertyCards.map((propertyCard, index) => (
             <div key={index} className="property-card">
-              <img src={propertyCard.icon} alt="..." />
-              <p className=" font-semibold text-lg text-center">
+              <img src={propertyCard.icon} alt="..." className=" md:w-14 w-9" />
+              <p className=" font-semibold text-sm md:text-lg text-center">
                 {propertyCard.text}
               </p>
-              <p className=" underline">{propertyCard.qty} properties</p>
+              <p className=" underline text-sm md:text-base">{propertyCard.qty} properties</p>
             </div>
           ))}
         </div>
