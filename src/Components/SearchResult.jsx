@@ -14,42 +14,44 @@ import { Link } from "react-router-dom";
 const SearchResult = () => {
   return (
     <div>
-      <div className=" capitalize -mt-6">
-        <h1>properties for rent in singapore</h1>
-        <p>
+      <div className=" capitalize -mt-6 md:pl-0 pl-10">
+        <h1 className=" md:text-3xl text-xl font-semibold ">
+          properties for rent in singapore
+        </h1>
+        <p className=" md:text-base text-sm">
           <span>16,823</span> properties found for rent
         </p>
-        <div className=" my-5 flex justify-between w-[89.5%]">
+        <div className=" my-5 flex md:flex-row flex-col justify-between w-[89.5%] md:space-y-0 space-y-5">
           <ResultSelector />
-          <div className=" flex space-x-3">
+          <div className=" flex md:flex-row flex-col md:space-y-0 space-y-5 md:space-x-3">
             <MapButton />
             <SortByButton />
           </div>
         </div>
-        <div className=" gap-14 flex flex-wrap my-10 w-[95%]">
+        <div className=" gap-14 flex flex-wrap my-10 w-[85%] md:w-[95%]">
           {properties.map((property, index) => (
             <Link to="/propertyListing/propertyDetail">
               <div key={index} className=" space-y-3">
                 <img src={buildingOne} alt="..." />
-                <p>{property.location}</p>
-                <p className=" font-semibold text-2xl">
+                <p className=" md:text-base text-sm">{property.location}</p>
+                <p className=" font-semibold md:text-2xl">
                   {property.description}
                 </p>
-                <p className=" text-xl font-semibold text-orange-900">
+                <p className=" md:text-xl font-semibold text-orange-900">
                   {" "}
                   {property.price}
                 </p>
-                <div className=" flex space-x-4">
+                <div className=" flex space-x-4 text-xs md:text-base">
                   <div className=" spec">
-                    <img src={bed} alt="..." width={30} />
+                    <img src={bed} alt="..." className=" md:w-7 w-5" />
                     <div>Bedrooms: {property.bedrooms}</div>
                   </div>
                   <div className=" spec">
-                    <img src={bathTub} alt="..." width={30} />
+                    <img src={bathTub} alt="..." className=" md:w-7 w-5" />
                     <div>Bathrooms: {property.bathrooms}</div>
                   </div>
                   <div className=" spec">
-                    <img src={area} alt="..." width={30} />
+                    <img src={area} alt="..." className=" md:w-7 w-5" />
                     <div>Area: {property.area}</div>
                   </div>
                 </div>

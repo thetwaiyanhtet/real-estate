@@ -32,7 +32,7 @@ const PropertyDetail = () => {
     <div>
       <div>
         <Navbar />
-        <div className=" flex items-center space-x-5 capitalize bg-gray-100 p-4 pl-9">
+        <div className=" flex items-center space-x-5 capitalize bg-gray-100 p-4 pl-9 md:text-base text-sm">
           <BiHome className=" size-6" />
           <div className=" flex space-x-2 items-center">
             <div className=" opacity-70 cursor-pointer">
@@ -50,17 +50,17 @@ const PropertyDetail = () => {
           </div>
         </div>
         <div className="p-7 pl-9 capitalize">
-          <div className=" flex gap-3">
+          <div className=" md:flex gap-3">
             <img src={imgOne} alt="..." width={800} />
-            <div className=" flex flex-wrap w-[900px] gap-3">
-              <img src={imgTwo} alt="..." width={350} />
-              <img src={imgThree} alt="..." width={350} />
-              <img src={imgFour} alt="..." width={350} />
-              <img src={imgFive} alt="..." width={350} />
+            <div className=" flex flex-wrap md:w-[900px] md:mt-0 mt-3 gap-3">
+              <img src={imgTwo} alt="..." className=" md:h-auto h-20" />
+              <img src={imgThree} alt="..." className=" md:h-auto h-20" />
+              <img src={imgFour} alt="..." className=" md:h-auto h-20" />
+              <img src={imgFive} alt="..." className=" md:h-auto h-20" />
             </div>
           </div>
           <div className=" flex justify-between items-center my-7">
-            <ul className="flex space-x-10 text-xl">
+            <ul className="flex flex-wrap md:space-x-10 md:text-xl text-sm">
               <li
                 className={`cate-menu ${
                   menu === "overview" ? "text-orange-900" : ""
@@ -121,23 +121,23 @@ const PropertyDetail = () => {
           </div>
           <div className=" flex ">
             <div>
-              <div className=" border-b space-y-4 py-5 w-[55%]">
+              <div className=" border-b space-y-4 py-5 md:w-auto w-[70%]">
                 <div className=" space-y-7">
-                  <p className=" text-xl font-bold">{data.location}</p>
-                  <p className=" font-semibold text-2xl text-orange-900">
+                  <p className=" md:text-xl font-bold">{data.location}</p>
+                  <p className=" font-semibold md:text-2xl text-orange-900">
                     {data.price} / Yearly
                   </p>
-                  <div className=" flex space-x-4">
-                    <div className=" spec border p-2">
-                      <img src={bed} alt="..." width={30} />
+                  <div className="flex flex-wrap gap-2 md:gap-5 md:text-base text-xs">
+                    <div className=" spec border md:w-auto w-32 p-2">
+                      <img src={bed} alt="..." className=" md:w-7 w-5" />
                       <div>Bedrooms: {data.bedrooms}</div>
                     </div>
-                    <div className=" spec border p-2">
-                      <img src={bathTub} alt="..." width={30} />
+                    <div className=" spec border md:w-auto w-32 p-2">
+                      <img src={bathTub} alt="..." className=" md:w-7 w-5" />
                       <div>Bathrooms: {data.bathrooms}</div>
                     </div>
-                    <div className=" spec border p-2">
-                      <img src={area} alt="..." width={30} />
+                    <div className=" spec border md:w-auto w-32 p-2">
+                      <img src={area} alt="..." className=" md:w-7 w-5" />
                       <div>Area: {data.area}</div>
                     </div>
                   </div>

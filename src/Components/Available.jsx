@@ -4,7 +4,7 @@ import verifiedUnfilled from "./Assets/verified-unfilled.png";
 const Available = () => {
   return (
     <div>
-      <div className=" normal-case bg-green-100 p-7 rounded-lg my-5">
+      <div className=" text-sm md:text-base bg-green-100 md:p-7 p-4 rounded-lg m-5">
         <div className=" space-y-3">
           <div className=" flex items-center space-x-2">
             <img src={verifiedUnfilled} alt="..." width={30} />
@@ -12,7 +12,7 @@ const Available = () => {
               Available & Accurate Listing
             </p>
           </div>
-          <p className=" ml-9 w-96">
+          <p className=" md:ml-9 md:w-96">
             We can assure that the description and photos for this property are
             very accurate.
           </p>

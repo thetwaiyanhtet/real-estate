@@ -5,8 +5,8 @@ const Record = () => {
     <div>
       <div className=" capitalize mx-10 my-10">
         <div>
-          <p className=" font-bold text-2xl">record ( past 12 months )</p>
-          <div className=" flex items-center justify-around bg-gray-100 px-5 py-7 rounded-xl my-7 text-center">
+          <p className=" font-semibold text-xl md:text-2xl">record ( past 12 months )</p>
+          <div className=" flex items-center justify-around bg-gray-100 px-5 py-7 rounded-xl my-7 text-center flex-wrap gap-7">
             <div>
               <p className=" text-xl font-semibold mb-2">390</p>
               <p>property listing</p>

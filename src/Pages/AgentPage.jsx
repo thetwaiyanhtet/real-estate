@@ -28,11 +28,11 @@ const AgentPage = () => {
           </div>
         </div>
         <SearchBarForAgent />
-        <div className=" flex mt-12">
-          <div className=" w-[30%]">
+        <div className=" md:flex mt-12">
+          <div className=" md:w-[30%]">
             <AgentFilter />
           </div>
-          <div className=" w-[70%]">
+          <div className=" md:w-[70%] md:p-0 p-5">
             <AgentFound />
           </div>
         </div>

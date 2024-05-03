@@ -78,7 +78,7 @@ const AgentDetailPage = () => {
           </ul>
         </div>
         <PersonalInformation data={agents} />
-        <div className=" flex items-center space-x-10">
+        <div className=" md:flex items-center md:space-x-10">
           <CompanyInfo />
           <Reliable />
           <Available />

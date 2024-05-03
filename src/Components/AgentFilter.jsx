@@ -5,8 +5,8 @@ const AgentFilter = () => {
   const [menu, setMenu] = useState("agent");
   return (
     <div>
-      <div className=" capitalize px-10 space-y-8">
-        <div className=" flex border items-center p-3 w-96 space-x-5">
+      <div className=" capitalize px-10 space-y-8 md:block">
+        <div className=" md:text-base text-sm flex border items-center p-3 md:w-96 space-x-5">
           <p
             className={`p-3 px-5 ml-3 ${
               menu === "agent"
@@ -29,7 +29,7 @@ const AgentFilter = () => {
           </p>
         </div>
         <div className=" space-y-5">
-          <p className=" font-semibold bg-gray-100 p-2 px-5 w-96 text-xl">
+          <p className=" font-semibold bg-gray-100 p-2 px-5 md:w-96 text-xl">
             reviews
           </p>
           <div className=" flex items-center justify-between space-x-3 w-72">
@@ -90,7 +90,7 @@ const AgentFilter = () => {
           <p className=" text-red-400 text-sm hover:underline">see less</p>
         </div>
         <div className=" space-y-5 mt-5">
-          <p className=" font-semibold bg-gray-100 p-2 px-5 w-96 text-xl">
+          <p className=" font-semibold bg-gray-100 p-2 px-5 md:w-96 text-xl">
             recommendations
           </p>
           <div className=" flex items-center space-x-3 w-20">

@@ -19,7 +19,7 @@ export default Button;
 export const EmailButton = () => {
   return (
     <div>
-      <div className=" flex items-center justify-center space-x-4 border py-5 bg-gray-700 text-white h-10 w-36">
+      <div className=" flex items-center justify-center space-x-4 border p-3 bg-gray-700 text-white h-10 md:w-36 w-26">
         <IoIosMail size={30} />
         <button>Email</button>
       </div>
@@ -30,8 +30,8 @@ export const EmailButton = () => {
 export const CallButton = () => {
   return (
     <div>
-      <div className=" flex items-center justify-center space-x-4 border border-gray-500 h-10 w-36">
-        <BsTelephone size={25} />
+      <div className=" flex items-center justify-center space-x-4 border p-3 border-gray-500 h-10 md:w-36 w-26">
+        <BsTelephone size={23} />
         <button>Call</button>
       </div>
     </div>

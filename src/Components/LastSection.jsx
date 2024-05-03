@@ -28,7 +28,7 @@ const LastSection = () => {
     <div>
       <div className="flex flex-col items-center justify-center space-y-16 capitalize">
         <h1 className=" text-2xl font-semibold md:text-3xl">latest projects</h1>
-        <div className=" flex gap-5 md:gap-10 flex-wrap items-center justify-center p-5">
+        <div className=" flex gap-5 md:gap-10 flex-wrap items-center justify-center p-8">
           {projects.map((project, index) => (
             <div className=" project-card">
               <div className=" bg-gray-600 w-36 p-3 text-xl text-white  absolute top-3">

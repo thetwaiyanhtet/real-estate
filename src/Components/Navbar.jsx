@@ -77,7 +77,7 @@ const Navbar = () => {
         </button>
       </div>
       {isOpen && (
-        <div className="space-y-7 flex items-center flex-col mb-7">
+        <div className="space-y-7 flex items-center flex-col mb-7 transition-transform duration-75 ease-in-out">
           <div className="uppercase font-semibold space-y-3 flex items-center flex-col">
             <NavLinks />
           </div>

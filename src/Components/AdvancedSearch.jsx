@@ -3,13 +3,13 @@ import React from "react";
 const AdvancedSearch = () => {
   return (
     <div>
-      <div className=" px-10 pb-10 capitalize flex space-x-10">
+      <div className=" px-10 pb-10 capitalize flex md:flex-row flex-col md:space-x-10 md:space-y-0 space-y-5">
         <div className=" space-y-3">
           <p>rent type</p>
           <select
             name="rentType"
             id=""
-            className="border outline-none p-3 px-5 w-72"
+            className="border outline-none p-3 px-5 w-[300px] md:w-72"
           >
             <option value="monthly">Monthly Rent</option>
             <option value="yearly">Yearly Rent</option>
@@ -19,7 +19,7 @@ const AdvancedSearch = () => {
           <p>agency or company</p>
           <input
             type="text"
-            className="border outline-none p-3.5 px-5 w-[378px]"
+            className="border outline-none p-3.5 px-5 w-[300px] md:w-[378px]"
             placeholder="Type agency or company"
           />
         </div>
@@ -27,7 +27,7 @@ const AdvancedSearch = () => {
           <p>keywords</p>
           <input
             type="text"
-            className="border outline-none p-3.5 px-5 w-[462px]"
+            className="border outline-none p-3.5 px-5 w-[300px] md:w-[462px]"
             placeholder="Add relevant keywords ( RC2 , MRT station )"
           />
         </div>

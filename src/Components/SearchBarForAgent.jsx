@@ -6,7 +6,7 @@ const SearchBarForAgent = () => {
   return (
     <div>
       <div>
-        <div className=" capitalize my-7 flex items-center justify-around px-3.5 ">
+        <div className=" capitalize my-7 flex md:flex-row flex-col md:items-center justify-around px-3.5 md:space-y-0 space-y-5 ">
           <div className=" space-y-3">
             <p>location ( city or State )</p>
             <div className=" flex space-x-5">

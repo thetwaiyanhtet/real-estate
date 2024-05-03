@@ -26,9 +26,9 @@ const CompanyProperties = () => {
   };
   return (
     <div>
-      <div className=" capitalize mx-10 my-20">
+      <div className=" capitalize md:mx-10 my-20">
         <div>
-          <p className="text-2xl font-semibold">properties by bryan</p>
+          <p className=" ml-7 text-2xl font-semibold">properties by bryan</p>
           <SearchFilter />
           <div className=" capitalize flex flex-col items-center space-y-7 my-3">
             <div>
@@ -57,17 +57,17 @@ const CompanyProperties = () => {
                     <div className=" font-bold text-orange-900 text-2xl">
                       {apartment.price}
                     </div>
-                    <div className=" flex space-x-4">
+                    <div className=" flex space-x-4 text-xs md:text-base">
                       <div className=" spec">
-                        <img src={bed} alt="..." width={30} />
+                        <img src={bed} alt="..." className=" md:w-7 w-5" />
                         <div>Bedrooms: {apartment.bedrooms}</div>
                       </div>
                       <div className=" spec">
-                        <img src={bathTub} alt="..." width={30} />
+                        <img src={bathTub} alt="..." className=" md:w-7 w-5" />
                         <div>Bathrooms: {apartment.bathrooms}</div>
                       </div>
                       <div className=" spec">
-                        <img src={area} alt="..." width={30} />
+                        <img src={area} alt="..." className=" md:w-7 w-5" />
                         <div>Area: {apartment.area}</div>
                       </div>
                     </div>

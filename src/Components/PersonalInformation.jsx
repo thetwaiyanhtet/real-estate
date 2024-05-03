@@ -9,7 +9,7 @@ const PersonalInformation = (props) => {
       <div className=" capitalize mx-10 my-5">
         <div className=" mt-3">
           <p className=" text-2xl font-bold">personal infromation</p>
-          <div className=" flex space-x-20 items-baseline">
+          <div className=" md:flex md:space-x-20 md:space-y-0 space-y-5 items-baseline">
             <div className=" space-y-5 mt-5">
               <div className=" flex">
                 <p className=" w-40">specialization</p>
@@ -32,7 +32,7 @@ const PersonalInformation = (props) => {
                 <p className=" underline">{firstData.social}</p>
               </div>
             </div>
-            <div className=" w-[65%] leading-7">
+            <div className=" md:w-[65%] leading-7">
               <p>{firstData.briefInfo}</p>
             </div>
           </div>

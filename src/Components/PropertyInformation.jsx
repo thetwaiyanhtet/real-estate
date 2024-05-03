@@ -8,7 +8,7 @@ const PropertyInformation = () => {
   return (
     <div>
       <div className=" border-b w-[55%]">
-        <h1>property information</h1>
+        <h1 className=" font-semibold text-lg md:text-3xl">property information</h1>
         <ul className=" flex space-x-5 ">
           <li
             className={`${

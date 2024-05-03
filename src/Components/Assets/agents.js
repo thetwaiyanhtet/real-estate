@@ -62,7 +62,7 @@ export const generateStar = (total) => {
   const stars = [];
 
   for (let index = 0; index < starCount; index++) {
-    stars.push(<img key={index} src={star} alt="..." width={20} />);
+    stars.push(<img key={index} src={star} alt="..." className=" md:w-6 w-4" />);
   }
 
   return <div className="flex space-x-2 w-32">{stars}</div>;

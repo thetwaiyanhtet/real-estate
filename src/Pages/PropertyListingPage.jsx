@@ -15,12 +15,14 @@ const PropertyListingPage = () => {
         <Navbar />
         <CurrentPagePath />
         <SearchFilter />
-        <AdvancedSearch/>
-        <div className=" flex space-x-16">
-          <Filters />
+        <AdvancedSearch />
+        <div className=" flex md:space-x-16">
+          <div className=" md:flex hidden">
+            <Filters />
+          </div>
           <SearchResult />
         </div>
-        <Footer/>
+        <Footer />
       </div>
     </div>
   );
